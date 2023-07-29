@@ -553,3 +553,6 @@ class Ctrader:
 
     def isconnected(self):
         return self.fix.logged
+
+    def __del__(self):
+        self.logout()
